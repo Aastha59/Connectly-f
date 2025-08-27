@@ -11,7 +11,7 @@ body {
   background: #f5f7fa;
   color: #2d2d2d;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Header */
@@ -24,36 +24,36 @@ header {
 }
 
 header h1 {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 0.6rem;
+  font-weight: 300;
   margin: 0;
 }
 
 /* Content */
 main {
   max-width: 700px;
-  margin: 5px auto;
-  padding: 5px;
+  margin: 2px auto;
+  padding: 2px;
   background: white;
-  border-radius: 5px;
-  font-size: 0.5rem;
+  border-radius: 2px;
+  font-size: 0.2rem;
   /* line-height: 1.8; */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
 }
 
 h2 {
   color: #4f46e5;
-  margin: 1.4em 0 0.8em;
-  font-size: 0.8rem;
+  margin: 1em 0 0.4em;
+  font-size: 0.3rem;
   border-left: 4px solid #4f46e5;
   padding-left: 5px;
 }
 
 p {
-  margin-bottom: 0.6em;
+  margin-bottom: 0.3em;
   color: #444;
   background: #f9fafb;
-  padding: 5px;
+  padding: 3px;
   border-radius: 8px;
 }
 
@@ -71,24 +71,24 @@ a:hover {
 /* Footer */
 footer {
   text-align: center;
-  padding: 5px;
+  padding: 2px;
   background: #f3f4f6;
   color: #555;
-  font-size: 0.5rem;
-  margin-top: 5px;
+  font-size: 0.3rem;
+  margin-top: 3px;
   border-top: 1px solid #e5e7eb;
 }
 
 @media (max-width: 500px) {
   h1 {
-    font-size: 1.1rem;
-  }
-  h2 {
     font-size: 0.7rem;
   }
+  h2 {
+    font-size: 0.3rem;
+  }
   main {
-    padding: 5px;
-    font-size: 1rem;
+    padding: 2px;
+    font-size: 0.3rem;
   }
 }
 
@@ -97,13 +97,13 @@ footer {
     font-size: 0.7rem;
   }
   h2 {
-    font-size: 0.4rem;
+    font-size: 0.3rem;
   }
   main {
-    padding: 5px;
-    font-size: 0.7rem;
+    padding: 3px;
+    font-size: 0.3rem;
   }
   p {
-    font-size: 0.7rem;
+    font-size: 0.3rem;
   }
 }

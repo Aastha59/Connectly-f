@@ -141,7 +141,7 @@ function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient">
-      <div className="bg-white bg-opacity-90 rounded-lg shadow-xl p-8 mt-20 w-full max-w-5xl">
+      <div className="bg-white bg-opacity-90 rounded-lg shadow-xl p-6 mt-10 mb-10 w-full max-w-5xl">
         <h1 className="text-4xl font-bold mb-6 text-center text-indigo-700"><i><b>Connectly</b></i></h1>
 
         {!googleToken ? (
@@ -176,7 +176,7 @@ function Home() {
             placeholder="your-email@example.com"
             value={senderEmail}
             onChange={(e) => setSenderEmail(e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded"
+            className="w-full px-3 py-1 border border-gray-300 rounded"
             autoComplete="email"
           />
         </div>
