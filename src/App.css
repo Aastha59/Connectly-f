@@ -213,7 +213,7 @@ body {
   max-width: 420px;
   margin: 0.7rem auto 0.8rem auto;
   padding: 0.3rem 0.4rem;
-  background: rgba(106, 103, 103, 0.95);
+  background: rgba(154, 150, 150, 0.95);
   border-radius: 20px;
   box-shadow: 0 7px 25px rgba(40,36,78,0.19), 0 2px 8px rgba(174,171,245,0.11);
   backdrop-filter: blur(10px);
