@@ -1,0 +1,80 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  background: #f4f6fb;
+  color: #2d2d2d;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Content */
+main {
+  max-width: 950px;
+  margin: 35px auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+h2 {
+  color: #4f46e5;
+  margin: 1.6em 0 0.7em;
+  font-size: 1.45rem;
+  border-left: 4px solid #6366f1;
+  padding-left: 10px;
+}
+
+p,
+label,
+.label {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 1em;
+  display: block;
+}
+
+/* Links */
+a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1e1b4b;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 18px;
+  background: #f3f4f6;
+  color: #555;
+  font-size: 0.95rem;
+  margin-top: 30px;
+  border-top: 1px solid #e5e7eb;
+}
