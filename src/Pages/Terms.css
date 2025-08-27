@@ -78,3 +78,32 @@ footer {
   margin-top: 30px;
   border-top: 1px solid #e5e7eb;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  main {
+    padding: 16px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  main {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}

@@ -407,23 +407,23 @@ textarea {
   border-bottom: 1px solid #dfdffd;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
   #root > div { padding: 2rem 0.8rem;}
-  h1 { font-size: 2.2rem;}
-  h2 { font-size: 1rem;}
-  .contact-table, .email-section { font-size: .98rem;}
-  label, p, input, textarea, button { font-size: 1rem;}
+  h1 { font-size: 1.6rem;}
+  h2 { font-size: 1.1rem;}
+  .contact-table, .email-section { font-size: .9rem;}
+  label, p, input, textarea, button { font-size: .8rem;}
 }
-@media (max-width: 470px) {
-  #root > div { padding: 1.3rem 0.4rem;}
-  h1 { font-size: 1.4rem;}
-  .contact-table, .email-section { font-size: .85rem;}
+@media (max-width: 400px) {
+  #root > div { padding: 1.1rem 0.3rem;}
+  h1 { font-size: 1.2rem;}
+  .contact-table, .email-section { font-size: .80rem;}
 }
 
 /* EmailSection */
-.email-section-title { margin-bottom: 2.2rem; font-size: 1.45rem; }
-.email-templates-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;}
-@media (max-width:800px) { .email-templates-list {grid-template-columns: 1fr;}}
+.email-section-title { margin-bottom: 2rem; font-size: 1.3rem; }
+.email-templates-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;}
+@media (max-width:700px) { .email-templates-list {grid-template-columns: 1fr;}}
 .email-template-card {
   background: rgba(246,244,255,0.91);
   border-radius: 18px;
