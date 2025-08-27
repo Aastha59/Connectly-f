@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.7;
+  /* line-height: 1.7; */
   background: #f5f7fa;
   color: #2d2d2d;
   padding: 0;
@@ -17,33 +17,33 @@ body {
 header {
   background: linear-gradient(135deg, #4f46e5, #6366f1);
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 600;
   margin: 0;
 }
 
 /* Content */
 main {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 25px;
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 10px;
   background: white;
-  border-radius: 14px;
-  font-size: 1.15rem;
-  line-height: 1.8;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  /* line-height: 1.8; */
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 h2 {
   color: #4f46e5;
-  margin: 1.8em 0 0.8em;
-  font-size: 1.5rem;
+  margin: 1.4em 0 0.8em;
+  font-size: 1.3rem;
   border-left: 4px solid #4f46e5;
   padding-left: 10px;
 }
@@ -70,15 +70,15 @@ a:hover {
 /* Footer */
 footer {
   text-align: center;
-  padding: 18px;
+  padding: 10px;
   background: #f3f4f6;
   color: #555;
-  font-size: 0.95rem;
-  margin-top: 30px;
+  font-size: 0.8rem;
+  margin-top: 10px;
   border-top: 1px solid #e5e7eb;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 1.6rem;
   }
@@ -86,12 +86,12 @@ footer {
     font-size: 1.2rem;
   }
   main {
-    padding: 16px;
+    padding: 10px;
     font-size: 1rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   h1 {
     font-size: 1.3rem;
   }
@@ -99,7 +99,7 @@ footer {
     font-size: 1rem;
   }
   main {
-    padding: 12px;
+    padding: 10px;
     font-size: 0.95rem;
   }
   p {

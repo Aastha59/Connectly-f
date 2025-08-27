@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.7;
+  /* line-height: 1.7; */
   background: #f4f6fb;
   color: #2d2d2d;
 }
@@ -16,33 +16,33 @@ body {
 header {
   background: linear-gradient(135deg, #4f46e5, #6366f1);
   color: white;
-  padding: 22px;
+  padding: 10px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin: 0;
 }
 
 /* Content */
 main {
-  max-width: 950px;
-  margin: 35px auto;
-  padding: 28px;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
   background: #ffffff;
-  border-radius: 14px;
+  border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  font-size: 1.15rem;
-  line-height: 1.8;
+  font-size: 0.8rem;
+  /* line-height: 1.8; */
 }
 
 h2 {
   color: #4f46e5;
   margin: 1.6em 0 0.7em;
-  font-size: 1.45rem;
+  font-size: 1rem;
   border-left: 4px solid #6366f1;
   padding-left: 10px;
 }
@@ -50,7 +50,7 @@ h2 {
 p,
 label,
 .label {
-  font-size: 1.05rem;
+  font-size: 0.8rem;
   color: #444;
   margin-bottom: 1em;
   display: block;
@@ -71,39 +71,39 @@ a:hover {
 /* Footer */
 footer {
   text-align: center;
-  padding: 18px;
+  padding: 10px;
   background: #f3f4f6;
   color: #555;
-  font-size: 0.95rem;
-  margin-top: 30px;
+  font-size: 0.8rem;
+  margin-top: 10px;
   border-top: 1px solid #e5e7eb;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   h1 {
-    font-size: 1.6rem;
-  }
-  h2 {
     font-size: 1.2rem;
   }
-  main {
-    padding: 16px;
+  h2 {
     font-size: 1rem;
+  }
+  main {
+    padding: 10px;
+    font-size: 0.8rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
   h1 {
-    font-size: 1.3rem;
-  }
-  h2 {
     font-size: 1rem;
   }
+  h2 {
+    font-size: 0.8rem;
+  }
   main {
-    padding: 12px;
-    font-size: 0.95rem;
+    padding: 10px;
+    font-size: 0.8rem;
   }
   p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
