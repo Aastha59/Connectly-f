@@ -142,7 +142,7 @@ function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient">
       <div className="bg-white bg-opacity-90 rounded-lg shadow-xl p-8 mt-20 w-full max-w-5xl">
-        <h1 className="text-4xl font-bold mb-6 text-center text-indigo-700">Agentic AI Bulk Outreach</h1>
+        <h1 className="text-4xl font-bold mb-6 text-center text-indigo-700"><i><b>Connectly</b></i></h1>
 
         {!googleToken ? (
           <button

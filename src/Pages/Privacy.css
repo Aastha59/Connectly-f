@@ -11,19 +11,20 @@ body {
   background: #f5f7fa;
   color: #2d2d2d;
   padding: 0;
+  overflow: hidden;
 }
 
 /* Header */
 header {
   background: linear-gradient(135deg, #4f46e5, #6366f1);
   color: white;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin: 0;
 }
@@ -31,28 +32,28 @@ header h1 {
 /* Content */
 main {
   max-width: 700px;
-  margin: 10px auto;
-  padding: 10px;
+  margin: 5px auto;
+  padding: 5px;
   background: white;
-  border-radius: 10px;
-  font-size: 0.8rem;
+  border-radius: 5px;
+  font-size: 0.5rem;
   /* line-height: 1.8; */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
 }
 
 h2 {
   color: #4f46e5;
   margin: 1.4em 0 0.8em;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   border-left: 4px solid #4f46e5;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 p {
-  margin-bottom: 1.2em;
+  margin-bottom: 0.6em;
   color: #444;
   background: #f9fafb;
-  padding: 10px;
+  padding: 5px;
   border-radius: 8px;
 }
 
@@ -70,39 +71,39 @@ a:hover {
 /* Footer */
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   background: #f3f4f6;
   color: #555;
-  font-size: 0.8rem;
-  margin-top: 10px;
+  font-size: 0.5rem;
+  margin-top: 5px;
   border-top: 1px solid #e5e7eb;
 }
 
 @media (max-width: 500px) {
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
   }
   h2 {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
   }
   main {
-    padding: 10px;
+    padding: 5px;
     font-size: 1rem;
   }
 }
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 1.3rem;
+    font-size: 0.7rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 0.4rem;
   }
   main {
-    padding: 10px;
-    font-size: 0.95rem;
+    padding: 5px;
+    font-size: 0.7rem;
   }
   p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
