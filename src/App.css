@@ -210,16 +210,17 @@ body {
 }
 
 #root > div {
-  max-width: 500px;
-  margin: 2.5rem auto 1.5rem auto;
-  padding: 1.2rem 1.7rem;
-  background: rgba(255,255,255,0.95);
+  max-width: 420px;
+  margin: 0.7rem auto 0.8rem auto;
+  padding: 0.3rem 0.4rem;
+  background: rgba(106, 103, 103, 0.95);
   border-radius: 20px;
   box-shadow: 0 7px 25px rgba(40,36,78,0.19), 0 2px 8px rgba(174,171,245,0.11);
   backdrop-filter: blur(10px);
   border: 1.5px solid rgba(160,158,229,0.15);
   animation: enter-float 1s cubic-bezier(.73,-0.11,.34,1.3);
   transition: box-shadow 0.3s, transform 0.3s;
+  padding-bottom: 0.5rem;
 }
 
 @keyframes enter-float {

@@ -140,9 +140,9 @@ function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient">
-      <div className="bg-white bg-opacity-90 rounded-lg shadow-xl p-6 mt-10 mb-10 w-full max-w-5xl">
-        <h1 className="text-4xl font-bold mb-6 text-center text-indigo-700"><i><b>Connectly</b></i></h1>
+    <div className="min-h-screen-80vh flex flex-col items-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient">
+      <div className="bg-white bg-opacity-50 rounded-lg shadow-xl p-6 mt-5 mb-5 w-full max-w-4xl">
+        <h1 className="text-4xl font-bold mb-4 mt-0.5 text-center text-indigo-700"><i><b>Connectly</b></i></h1>
 
         {!googleToken ? (
           <button
