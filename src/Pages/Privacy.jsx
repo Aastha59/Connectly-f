@@ -64,6 +64,7 @@ function Privacy() {
         header {
           text-align: center;
           margin-bottom: 20px;
+          margin-top:20px
         }
 
         header h1 {

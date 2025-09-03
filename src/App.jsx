@@ -1859,23 +1859,39 @@
 // export default App;
 
 
+
+
+
+
+
+
 import React from 'react'
 import Privacy from "./Pages/Privacy";
 import Home from "./Pages/Home";
 import Terms from "./Pages/Terms";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+// import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import Privacy from "./Pages/Privacy";  // make sure the path matches your file
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/terms" element={<Terms />} />
-      </Routes>
-      
+      <div className="app-container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+        </Routes>
+
+        {/* Footer with links */}
+        <footer style={{ textAlign: "center", marginTop: "30px", padding: "15px", borderTop: "1px solid #ddd" }}>
+          <Link to="/privacy" style={{ marginRight: "20px" }}>Privacy Policy</Link>
+          <Link to="/terms">Terms & Conditions</Link>
+        </footer>
+      </div>
     </Router>
   )
 }
 
 export default App
+
