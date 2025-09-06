@@ -1865,6 +1865,43 @@
 
 
 
+// import React from 'react'
+// import Privacy from "./Pages/Privacy";
+// import Home from "./Pages/Home";
+// import Terms from "./Pages/Terms";
+// // import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// // import Privacy from "./Pages/Privacy";  // make sure the path matches your file
+
+// function App() {
+//   return (
+//     <Router>
+//       <div className="app-container">
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/privacy" element={<Privacy />} />
+//           <Route path="/terms" element={<Terms />} />
+//         </Routes>
+
+//         {/* Footer with links */}
+//         <footer style={{ textAlign: "center", marginTop: "30px", padding: "15px", borderTop: "1px solid #ddd" }}>
+//           <Link to="/privacy" style={{ marginRight: "20px" }}>Privacy Policy</Link>
+//           <Link to="/terms">Terms & Conditions</Link>
+//         </footer>
+//       </div>
+//     </Router>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
+
 import React from 'react'
 import Privacy from "./Pages/Privacy";
 import Home from "./Pages/Home";
@@ -1893,5 +1930,55 @@ function App() {
   )
 }
 
-export default App
+export default App;
 
+
+
+
+
+// import React, { useEffect } from 'react'
+// import Privacy from "./Pages/Privacy";
+// import Home from "./Pages/Home";
+// import Terms from "./Pages/Terms";
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+// function App() {
+//   useEffect(() => {
+//     try {
+//       (window.adsbygoogle = window.adsbygoogle || []).push({});
+//     } catch (e) {
+//       console.error("Adsense error", e);
+//     }
+//   }, []);
+
+//   return (
+//     <Router>
+//       <div className="app-container">
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/privacy" element={<Privacy />} />
+//           <Route path="/terms" element={<Terms />} />
+//         </Routes>
+
+//         {/* ✅ Google AdSense Ad Slot */}
+//         <div style={{ textAlign: "center", margin: "30px 0" }}>
+//           <ins
+//             className="adsbygoogle"
+//             style={{ display: "block" }}
+//             data-ad-client="ca-pub-6277101097929109"
+//             data-ad-slot="1234567890"   // 🔁 replace with your Ad Slot ID
+//             data-ad-format="auto"
+//             data-full-width-responsive="true"></ins>
+//         </div>
+
+//         {/* Footer with links */}
+//         <footer style={{ textAlign: "center", marginTop: "30px", padding: "15px", borderTop: "1px solid #ddd" }}>
+//           <Link to="/privacy" style={{ marginRight: "20px" }}>Privacy Policy</Link>
+//           <Link to="/terms">Terms & Conditions</Link>
+//         </footer>
+//       </div>
+//     </Router>
+//   )
+// }
+
+// export default App;
