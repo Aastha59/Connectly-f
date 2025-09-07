@@ -381,7 +381,7 @@ function Home() {
           data-ad-format="auto"
           data-full-width-responsive="true"></ins> */}
 
-        <AdBanner />
+        {/* <AdBanner /> */}
 
         {!googleToken ? (
           <button
