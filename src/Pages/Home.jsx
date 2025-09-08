@@ -220,7 +220,7 @@ import SearchForm from "../components/SearchForm";
 import ContactsTable from "../components/ContactsTable";
 import EmailSection from "../components/EmailSection";
 import AdBanner from "../components/AdBanner";
-import connectlyLogo from "../connectly_logo.png";
+import connectlyLogo from "../I4.png";
 
 function Home() {
   const [contacts, setContacts] = useState([]);
