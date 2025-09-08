@@ -364,6 +364,127 @@ function Home() {
     }
   };
 
+//   return (
+//     <div className="min-h-screen-80vh flex flex-col items-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient">
+//       <div className="bg-white bg-opacity-50 rounded-lg shadow-xl p-6 mt-5 mb-5 w-full max-w-4xl">
+//         <h1 className="text-4xl font-bold mb-4 mt-0.5 text-center text-indigo-700">
+//           <i>
+//             <b>Connectly</b>
+//           </i>
+//         </h1>
+//            <p className="text-md text-gray-800 mb-6 text-center">
+//              Connectly is a secure communication platform for professionals and businesses, enabling users to discover contacts, customize outreach, and send emails with attachments directly via Gmail. Streamline project collaboration and communication from any location.
+//            </p>
+
+
+//         {/* ✅ Place Ad Banner here */}
+//         {/* <ins className="adsbygoogle"
+//           style={{ display: "block" }}
+//           data-ad-client="ca-pub-6277101097929109"
+//           data-ad-slot="7281837333"
+//           data-ad-format="auto"
+//           data-full-width-responsive="true"></ins> */}
+
+//         {/* <AdBanner /> */}
+
+//         {!googleToken ? (
+//           <button
+//             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-6"
+//             onClick={() => login()}
+//             type="button"
+//           >
+//             Sign in with Google to Send Emails
+//           </button>
+//         ) : (
+//           <div className="flex items-center mb-6">
+//             <span className="text-green-800 font-bold mr-4">
+//               Signed in as {userProfile?.email}
+//             </span>
+//             <button
+//               className="bg-red-600 hover:bg-red-700 text-white font-bold py-1 px-3 rounded text-sm"
+//               onClick={logout}
+//               type="button"
+//             >
+//               Logout
+//             </button>
+//           </div>
+//         )}
+
+//         <div className="mb-6">
+//           <label
+//             htmlFor="senderEmail"
+//             className="block font-semibold text-gray-700 mb-1"
+//           >
+//             Sender Email Address
+//           </label>
+//           <input
+//             id="senderEmail"
+//             name="senderEmail"
+//             type="email"
+//             placeholder="your-email@example.com"
+//             value={senderEmail}
+//             onChange={(e) => setSenderEmail(e.target.value)}
+//             className="w-full px-3 py-1 border border-gray-300 rounded"
+//             autoComplete="email"
+//           />
+//         </div>
+
+//         <SearchForm onSearch={handleSearch} />
+
+//         {contacts.length > 0 && (
+//           <ContactsTable contacts={contacts} type={contactType} />
+//         )}
+
+//         {templates.length > 0 && (
+//           <>
+//             <EmailSection
+//               templates={templates}
+//               onTemplateSelect={handleTemplateSelect}
+//               body={body}
+//               setBody={setBody}
+//               subject={subject}
+//               setSubject={setSubject}
+//               onSend={handleSend}
+//               status={status}
+//             />
+//             <div className="mt-6">
+//               <label
+//                 className="block mb-2 font-semibold text-gray-700"
+//                 htmlFor="attachment"
+//               >
+//                 Attach a file (optional)
+//               </label>
+//               <input
+//                 id="attachment"
+//                 type="file"
+//                 onChange={handleAttachmentChange}
+//                 className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100"
+//               />
+//             </div>
+//           </>
+//         )}
+
+//         {/* ✅ Place Ad Banner here */}
+
+//         {/* <ins
+//           class="adsbygoogle"
+//           style="display:block"
+//           data-ad-client="ca-pub-6277101097929109"
+//           data-ad-slot="7281837333"
+//           data-ad-format="auto"
+//           data-full-width-responsive="true"
+//         ></ins> */}
+//         {/* <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> */}
+
+//         <AdBanner />
+
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Home;
+
   return (
     <div className="min-h-screen-80vh flex flex-col items-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient">
       <div className="bg-white bg-opacity-50 rounded-lg shadow-xl p-6 mt-5 mb-5 w-full max-w-4xl">
@@ -372,6 +493,51 @@ function Home() {
             <b>Connectly</b>
           </i>
         </h1>
+        {/* <p className="text-md text-gray-800 mb-6 text-center">
+          Connectly is a secure communication platform for professionals and businesses, enabling users to discover contacts, customize outreach, and send emails with attachments directly via Gmail. Streamline project collaboration and communication from any location.
+        </p> */}
+
+        {/* Creative Section START */}
+        <div className="mb-6">
+          {/* <div className="text-xl font-semibold text-center mb-2 text-purple-700">
+            Instantly connect and engage — seamless outreach made simple.
+          </div> */}
+          <div className="flex justify-center gap-4 mb-4">
+            <div className="bg-indigo-100 rounded-lg p-3 flex flex-col items-center w-40">
+              <span role="img" aria-label="Bulk Email" className="text-3xl mb-2">📧</span>
+              <span className="font-bold">Bulk Email Send</span>
+              <span className="text-xs text-gray-500 mt-1 text-center">Send emails to multiple contacts with one click.</span>
+            </div>
+            <div className="bg-indigo-100 rounded-lg p-3 flex flex-col items-center w-40">
+              <span role="img" aria-label="Contacts" className="text-3xl mb-2">🧑‍💼</span>
+              <span className="font-bold">Contact Discovery</span>
+              <span className="text-xs text-gray-500 mt-1 text-center">Find professional contacts by role and country.</span>
+            </div>
+            <div className="bg-indigo-100 rounded-lg p-3 flex flex-col items-center w-40">
+              <span role="img" aria-label="Google Lock" className="text-3xl mb-2">🔒</span>
+              <span className="font-bold">Secure Google Integration</span>
+              <span className="text-xs text-gray-500 mt-1 text-center">Safe, verified connection via Google OAuth.</span>
+            </div>
+          </div>
+          <div className="bg-indigo-50 rounded-xl p-4 mb-3">
+            <h2 className="text-lg font-bold mb-2 text-indigo-700 text-center">How It Works</h2>
+            <ol className="list-decimal ml-8 text-left text-gray-800">
+              <li>Search for professional contacts by job category/Position</li>
+              <li>Choose or customize your outreach message</li>
+              <li>Send personalized emails securely with attachments— track results</li>
+            </ol>
+          </div>
+          <div className="mb-4 flex flex-col items-center">
+            {/* <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-2 px-6 rounded-full hover:scale-105 transition">
+              Try Free Demo
+            </button> */}
+            {/* <div className="mt-2 text-sm text-gray-600">
+              Trusted by modern teams worldwide.
+              <span className="inline-block ml-2 align-middle" title="OAuth Verified">🔒 Google OAuth Verified</span>
+            </div> */}
+          </div>
+        </div>
+        {/* Creative Section END */}
 
         {/* ✅ Place Ad Banner here */}
         {/* <ins className="adsbygoogle"
@@ -480,8 +646,6 @@ function Home() {
 }
 
 export default Home;
-
-
 
 
 
