@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://connectlyai.in/:1",
+      "permanent": true
+    }
+  ]
+}
