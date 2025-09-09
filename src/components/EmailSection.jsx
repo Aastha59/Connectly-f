@@ -169,6 +169,110 @@
 
 
 
+// import React from "react";
+
+// const EmailSection = ({
+//   templates,
+//   onTemplateSelect,
+//   body,
+//   setBody,
+//   subject,
+//   setSubject,
+//   onSend,
+//   status,
+// }) => (
+//   <div className="email-section my-6">
+//     <h2 className="email-section-title">Choose/Edit Mail Template:</h2>
+//     <div className="email-templates-list">
+//       {templates.map((t, i) => (
+//         <div
+//           key={i}
+//           className="email-template-card"
+//           onClick={() => onTemplateSelect(t)}
+//           role="button"
+//           tabIndex={0}
+//           onKeyDown={(e) => {
+//             if (e.key === "Enter" || e.key === " ") onTemplateSelect(t);
+//           }}
+//           aria-label={`Select template ${i + 1}`}
+//         >
+//           <h3 className="email-template-card-title">Template {i + 1}</h3>
+//           <h4 className="email-template-card-subject">
+//             {t.subject.replace("{role}", "").replace("{country}", "")}
+//           </h4>
+//           <p className="email-template-card-body">
+//             {t.body.replace("{role}", "").replace("{country}", "")}
+//           </p>
+//           <button
+//             onClick={(e) => {
+//               e.stopPropagation();
+//               onTemplateSelect(t);
+//             }}
+//             className="email-template-card-btn"
+//           >
+//             Use This Template
+//           </button>
+//         </div>
+//       ))}
+//     </div>
+//     <div className="mt-10 flex flex-col gap-6 w-full max-w-2xl">
+//       <div>
+//         <label htmlFor="subject" className="label mb-2 block font-semibold">
+//           Subject
+//         </label>
+//         <input
+//           id="subject"
+//           type="text"
+//           className="email-input w-full p-3 rounded border border-indigo-300 focus:ring-2 focus:ring-indigo-400 transition"
+//           value={subject}
+//           onChange={(e) => setSubject(e.target.value)}
+//           placeholder="Email Subject"
+//         />
+//       </div>
+//       <div>
+//         <label htmlFor="body" className="label mb-2 block font-semibold">
+//           Email Body
+//         </label>
+//         <textarea
+//           id="body"
+//           rows={10}
+//           className="email-textarea w-full p-3 rounded border border-indigo-300 focus:ring-2 focus:ring-indigo-400 transition resize-y"
+//           value={body}
+//           onChange={(e) => setBody(e.target.value)}
+//           placeholder="Edit your email here..."
+//         />
+//       </div>
+//       <button
+//         onClick={onSend}
+//         className="email-send-btn btn btn-primary w-full py-3 mt-2"
+//         type="button"
+//       >
+//         Send Emails
+//       </button>
+//       {status && (
+//         <div
+//           className={`status mt-4 w-full text-center ${status.includes("failed") ? "bg-red-50 border border-red-200 text-red-700" : "bg-green-50 border border-green-200 text-green-700"
+//             }`}
+//           role="alert"
+//           aria-live="polite"
+//         >
+//           {status}
+//         </div>
+//       )}
+//     </div>
+//   </div>
+// );
+
+// export default EmailSection;
+
+
+
+
+
+
+
+
+
 import React from "react";
 
 const EmailSection = ({
@@ -183,11 +287,11 @@ const EmailSection = ({
 }) => (
   <div className="email-section my-6">
     <h2 className="email-section-title">Choose/Edit Mail Template:</h2>
-    <div className="email-templates-list">
+    <div className="email-templates-list flex flex-wrap gap-4">
       {templates.map((t, i) => (
         <div
           key={i}
-          className="email-template-card"
+          className="email-template-card cursor-pointer border border-gray-300 rounded-lg p-3 w-55 h-45 overflow-y-auto shadow-sm hover:shadow-md transition"
           onClick={() => onTemplateSelect(t)}
           role="button"
           tabIndex={0}
@@ -196,11 +300,13 @@ const EmailSection = ({
           }}
           aria-label={`Select template ${i + 1}`}
         >
-          <h3 className="email-template-card-title">Template {i + 1}</h3>
-          <h4 className="email-template-card-subject">
+          <h3 className="email-template-card-title font-semibold text-indigo-700 text-sm mb-1">
+            Template {i + 1}
+          </h3>
+          <h4 className="email-template-card-subject font-medium text-gray-800 text-s mb-1">
             {t.subject.replace("{role}", "").replace("{country}", "")}
           </h4>
-          <p className="email-template-card-body">
+          <p className="email-template-card-body text-s text-gray-500 mb-1">
             {t.body.replace("{role}", "").replace("{country}", "")}
           </p>
           <button
@@ -208,9 +314,9 @@ const EmailSection = ({
               e.stopPropagation();
               onTemplateSelect(t);
             }}
-            className="email-template-card-btn"
+            className="email-template-card-btn bg-indigo-500 hover:bg-indigo-600 text-white text-xs py-1 px-2 rounded"
           >
-            Use This Template
+            Use This
           </button>
         </div>
       ))}
@@ -223,14 +329,14 @@ const EmailSection = ({
         <input
           id="subject"
           type="text"
-          className="email-input w-full p-3 rounded border border-indigo-300 focus:ring-2 focus:ring-indigo-400 transition"
+          className="email-input w-full p-3 rounded border border-indigo-300 focus:ring-2 focus:ring-indigo-400 transition "
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           placeholder="Email Subject"
         />
       </div>
       <div>
-        <label htmlFor="body" className="label mb-2 block font-semibold">
+        <label htmlFor="body" className="label mb-2 block font-semibold max-w-8xl">
           Email Body
         </label>
         <textarea
@@ -251,8 +357,11 @@ const EmailSection = ({
       </button>
       {status && (
         <div
-          className={`status mt-4 w-full text-center ${status.includes("failed") ? "bg-red-50 border border-red-200 text-red-700" : "bg-green-50 border border-green-200 text-green-700"
-            }`}
+          className={`status mt-4 w-full text-center ${
+            status.includes("failed")
+              ? "bg-red-50 border border-red-200 text-red-700"
+              : "bg-green-50 border border-green-200 text-green-700"
+          }`}
           role="alert"
           aria-live="polite"
         >

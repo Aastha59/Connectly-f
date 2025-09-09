@@ -195,7 +195,7 @@ button.btn-secondary:hover {
 body {
   background: linear-gradient(135deg, #d2d6ef 0%, #d3cce3 100%);
   background-size: 300% 300%;
-  animation: bg-move 16s ease-in-out infinite;
+  /* animation: bg-move 16s ease-in-out infinite; */
   font-family: 'Inter', 'Mulish', 'Segoe UI', Arial, sans-serif;
   color: #25264d;
   min-height: 10vh;
@@ -210,7 +210,7 @@ body {
 }
 
 #root > div {
-  max-width: 420px;
+  max-width: 1000px;
   margin: 0.7rem auto 0.8rem auto;
   padding: 0.3rem 0.4rem;
   background: rgba(154, 150, 150, 0.95);
@@ -228,10 +228,10 @@ body {
   100% { transform:none; opacity:1; }
 }
 
-#root > div:hover {
+/* #root > div:hover {
   box-shadow: 0 14px 34px rgba(58,22,128,0.17), 0 6px 20px rgba(232,227,255,0.09);
   transform: scale(1.025) translateY(-3px);
-}
+} */
 
 h1 {
   font-size: 3rem;
@@ -276,6 +276,7 @@ input[type="text"], input[type="email"], input[type="file"], textarea, select {
   background: rgba(246,246,254,0.87);
   box-shadow: 0 1px 4px rgba(156,154,231,0.08);
   transition: border-color 0.27s, box-shadow 0.33s, background 0.22s;
+  width: 100%;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus, textarea:focus, select:focus {
@@ -297,6 +298,8 @@ button {
   box-shadow: 0 4px 14px rgba(61, 37, 119, 0.23);
   transition: background 0.26s, box-shadow 0.18s, transform 0.19s;
   margin-bottom: 0.4rem;
+  
+  
 }
 
 button.btn-primary {
@@ -339,6 +342,7 @@ input[type="file"] {
 textarea {
   min-height: 70px;
   max-width: 100%;
+  
 }
 
 .email-section {
@@ -353,12 +357,15 @@ textarea {
 .email-send-btn {
   margin-top: 1.5rem;
   font-weight: 700;
+  width: 127%;
 }
 
 
 .email-section textarea {
   border-radius: 13px;
   border: 2px solid #cdbcf7;
+  
+
 }
 
 .email-section .status {
