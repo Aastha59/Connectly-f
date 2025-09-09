@@ -432,6 +432,33 @@ function Home() {
             </ol>
           </div>
           <div className="mb-4 flex flex-col items-center">
+            
+            {/* Above AdBanner for substantial content */}
+            {/* Add between 'How It Works' and <AdBanner />, or above your first <AdBanner /> placement */}
+            <div className="bg-white bg-opacity-80 rounded-lg p-4 mb-6 shadow">
+              <h2 className="text-xl font-bold text-indigo-600 mb-2">
+                About Connectly 
+              </h2>
+              <p className="text-gray-800">
+                Connectly empowers job seekers, professionals, and startups
+                to discover business contacts, send personalized outreach
+                emails, and track responses—all with secure integration to Gmail
+                and LinkedIn. Our platform is trusted by global teams for
+                frictionless, automated communication.
+              </p>
+              <h3 className="text-lg font-semibold text-indigo-500 mt-4 mb-1">
+                Pro Tips for Outreach Success
+              </h3>
+              <ul className="list-disc ml-6 text-gray-700">
+                <li>
+                  Personalize your subject and email for every role and country.
+                </li>
+                <li>Attach relevant documents to build credibility.</li>
+                <li>Track follow-up responses to improve engagement.</li>
+              </ul>
+            </div>
+          {/* <AdBanner /> */}
+          
             {/* <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-2 px-6 rounded-full hover:scale-105 transition">
               Try Free Demo
             </button> */}
@@ -451,7 +478,7 @@ function Home() {
           data-ad-format="auto"
           data-full-width-responsive="true"></ins> */}
 
-        {/* <AdBanner /> */}
+        <AdBanner />
 
         {!googleToken ? (
           <button
@@ -542,13 +569,16 @@ function Home() {
         ></ins> */}
         {/* <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> */}
 
-        <AdBanner />
+        {/* <AdBanner /> */}
       </div>
     </div>
   );
 }
 
 export default Home;
+
+
+
 
 // import React, { useState } from "react";
 // import axios from "axios";
