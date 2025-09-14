@@ -285,7 +285,7 @@ const EmailSection = ({
   onSend,
   status,
 }) => (
-  <div className="email-section my-6">
+  <div className="email-section my-4">
     <h2 className="email-section-title">Choose/Edit Mail Template:</h2>
     <div className="email-templates-list flex flex-wrap gap-4">
       {templates.map((t, i) => (
