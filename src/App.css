@@ -453,6 +453,8 @@ body.dark-mode, .dark-mode {
   color: #ebefef !important;
 }
 
+
+
 /* Make dashboard feature cards responsive */
 .dashboard-card {
   flex: 1 1 calc(50% - 1rem);
