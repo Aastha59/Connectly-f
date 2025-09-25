@@ -6,6 +6,8 @@ import ContactsTable from "../components/ContactsTable";
 import EmailSection from "../components/EmailSection";
 import AdBanner from "../components/AdBanner";
 import connectlyLogo from "../I4.png";
+import Header from "../components/Header";
+import Dashboard from "../components/Dashboard";
 function Home() {
   const [contacts, setContacts] = useState([]);
   const [templates, setTemplates] = useState([]);
@@ -63,7 +65,7 @@ function Home() {
     setContactType(contactType);
     try {
       const resp = await axios.post(
-        "https://connectly-b-1.onrender.com/api/search",
+        `${process.env.BACKEND_URL}/api/search`,
         {
           role,
           country,
@@ -74,7 +76,7 @@ function Home() {
       setContacts(resp.data.contacts);
       console.log("Contacts Found:", resp.data.contacts);
       const tmpl = await axios.post(
-        "https://connectly-b-1.onrender.com/api/templates"
+        `${process.env.BACKEND_URL}/api/templates`
       );
       setTemplates(tmpl.data.templates);
     } catch (err) {
@@ -118,7 +120,7 @@ function Home() {
     }
     try {
       const resp = await axios.post(
-        "https://connectly-b-1.onrender.com/api/send_email_with_attachment_oauth",
+        `${process.env.BACKEND_URL}/api/send_email_with_attachment_oauth`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -131,7 +133,10 @@ function Home() {
     }
   };
   return (
+    
     <div className="min-h-screen flex flex-col items-center bg-gradient-to-br from-[#262947] via-[#4851a8] to-[#c2e7f8]">
+      {/* <Header /> */}
+
       <div className="w-full max-w-[940px] bg-white bg-opacity-95 rounded-3xl shadow-2xl p-10 mt-12 mb-12 relative">
         {/* Branding & Dashboard Header */}
         <div className="mx-auto w-[110px] h-[110px] rounded-xl flex items-center justify-center bg-gradient-to-tr from-[#4851a8] to-white shadow mb-8">
