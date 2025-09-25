@@ -6,8 +6,8 @@ import ContactsTable from "../components/ContactsTable";
 import EmailSection from "../components/EmailSection";
 import AdBanner from "../components/AdBanner";
 import connectlyLogo from "../I4.png";
-import Header from "../components/Header";
-import Dashboard from "../components/Dashboard";
+// import Header from "../components/Header";
+// import Dashboard from "../components/Dashboard";
 function Home() {
   const [contacts, setContacts] = useState([]);
   const [templates, setTemplates] = useState([]);

@@ -2,7 +2,7 @@ fastapi
 uvicorn
 requests
 python-dotenv
-recharts
+# recharts
 # smtplib
 # email
 openai
