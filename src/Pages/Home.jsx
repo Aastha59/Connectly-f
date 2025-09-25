@@ -65,7 +65,7 @@ function Home() {
     setContactType(contactType);
     try {
       const resp = await axios.post(
-        `${process.env.BACKEND_URL}/api/search`,
+        `${process.env.REACT_APP_BACKEND_URL}/api/search`,
         {
           role,
           country,
@@ -76,7 +76,7 @@ function Home() {
       setContacts(resp.data.contacts);
       console.log("Contacts Found:", resp.data.contacts);
       const tmpl = await axios.post(
-        `${process.env.BACKEND_URL}/api/templates`
+        `${process.env.REACT_APP_BACKEND_URL}/api/templates`
       );
       setTemplates(tmpl.data.templates);
     } catch (err) {
@@ -120,7 +120,7 @@ function Home() {
     }
     try {
       const resp = await axios.post(
-        `${process.env.BACKEND_URL}/api/send_email_with_attachment_oauth`,
+        `${process.env.REACT_APP_BACKEND_URL}/api/send_email_with_attachment_oauth`,
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
