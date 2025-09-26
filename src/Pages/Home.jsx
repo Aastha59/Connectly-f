@@ -78,15 +78,35 @@ function Home() {
         `${process.env.REACT_APP_BACKEND_URL}/api/templates`
       );
       setTemplates(tmpl.data.templates);
-    } catch (err) {
+    }
+    catch (err) {
       console.error("Error during search:", err);
-      if (err.response?.status === 503) {
-          setStatus(err.response.data.error); // "Site is updating, Wait for sometime."
-      } 
-      else {
-          setStatus("Failed to search contacts.");
+    
+      if (err.response) {
+        if (err.response.status === 429) {
+          setStatus("Too many requests! Please wait a few seconds and try again.");
+        } else if (err.response.data?.error) {
+          setStatus(err.response.data.error);
+        } else {
+          setStatus(`Error: ${err.response.status} ${err.response.statusText}`);
+        }
+      } else if (err.request) {
+        setStatus("No response from server. Try again later.");
+      } else {
+        setStatus("Failed to search contacts.");
       }
     }
+
+ 
+    // catch (err) {
+    //   console.error("Error during search:", err);
+    //   if (err.response?.data?.error) {
+    //       setStatus(err.response.data.error); // "Site is updating, Wait for sometime."
+    //   } 
+    //   else {
+    //       setStatus("Failed to search contacts.");
+    //   }
+    // }
   };
   const handleTemplateSelect = (t) => {
     setSubject(t.subject.replace("{role}", role).replace("{country}", country));
