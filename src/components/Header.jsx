@@ -1,239 +1,109 @@
-// // import React from "react";
-// // import connectlyLogo from "../I4.png"; // adjust path if needed
+// import React from "react";
+// import connectlyLogo from "../I4.png"; // adjust path if needed
 
-// // function Header() {
-// //   return (
-// //     <header className="flex items-center justify-between px-8 py-4 bg-[#262947] shadow sticky top-0 z-20 w-full">
-// //       <div className="flex items-center">
-// //         <img src={connectlyLogo} alt="Connectly AI Logo" className="w-12 h-12 rounded-lg mr-3" />
-// //         <span className="text-2xl font-bold text-[#90def9] tracking-wide">Connectly AI</span>
-// //       </div>
-// //       <nav>
-// //         <ul className="flex gap-8 font-medium text-[#ebf1ff]">
-// //           <li><a href="#dashboard" className="hover:text-[#3797ad]">About</a></li>
-// //           <li><a href="#contacts" className="hover:text-[#3797ad]">Contacts</a></li>
-// //           <li><a href="#templates" className="hover:text-[#3797ad]">Home</a></li>
-// //           <li><a href="#analytics" className="hover:text-[#3797ad]">Theme</a></li>
-// //         </ul>
-// //       </nav>
-// //     </header>
-// //   );
-// // }
+// function Header() {
+//   return (
+//     <header className="flex items-center justify-between px-8 py-4 bg-[#262947] shadow sticky top-0 z-20 w-full">
+//       <div className="flex items-center">
+//         <img src={connectlyLogo} alt="Connectly AI Logo" className="w-12 h-12 rounded-lg mr-3" />
+//         <span className="text-2xl font-bold text-[#90def9] tracking-wide">Connectly AI</span>
+//       </div>
+//       <nav>
+//         <ul className="flex gap-8 font-medium text-[#ebf1ff]">
+//           <li><a href="#dashboard" className="hover:text-[#3797ad]">About</a></li>
+//           <li><a href="#contacts" className="hover:text-[#3797ad]">Contacts</a></li>
+//           <li><a href="#templates" className="hover:text-[#3797ad]">Home</a></li>
+//           <li><a href="#analytics" className="hover:text-[#3797ad]">Theme</a></li>
+//         </ul>
+//       </nav>
+//     </header>
+//   );
+// }
 
-// // export default Header;
-
-
-
-
-
-
-// // import React, { useState } from "react";
-// // import connectlyLogo from "../I4.png";
-
-// // function Header({
-// //   userName = "User",
-// //   notificationsCount = 0,
-// //   onThemeToggle = () => {},
-// //   onLogout = () => {},
-// // }) {
-// //   const [darkMode, setDarkMode] = useState(false);
-
-// //   const toggleTheme = () => {
-// //     setDarkMode(!darkMode);
-// //     onThemeToggle(!darkMode);
-// //   };
-
-// //   return (
-// //     <header
-// //       className={`flex items-center justify-between px-8 py-4 sticky top-0 z-20 w-full shadow ${
-// //         darkMode ? "bg-gray-900" : "bg-[#262947]"
-// //       }`}
-// //     >
-// //       <div className="flex items-center space-x-4">
-// //         <img
-// //           src={connectlyLogo}
-// //           alt="Connectly AI Logo"
-// //           className="w-12 h-12 rounded-lg"
-// //         />
-// //         <span className="text-2xl font-bold text-[#90def9] tracking-wide">
-// //           Connectly
-// //         </span>
-// //         <span className="text-white font-medium">Hello, {userName}</span>
-// //       </div>
-
-// //       <nav className="flex items-center space-x-6 font-medium text-[#ebf1ff]">
-
-
-// //         {/* Quick Actions Dropdown */}
-// //         <div className="relative group">
-// //           <button className="px-3 py-1 rounded bg-[#4452c3] hover:bg-[#334080] text-white">
-// //             Quick Actions ▼
-// //           </button>
-// //           <div className="absolute right-0 mt-2 w-48 rounded-md bg-white shadow-lg z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-300">
-// //             <a
-// //               href="#new-email"
-// //               className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-// //             >
-// //               About
-// //             </a>
-// //             <a
-// //               href="#add-contact"
-// //               className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-// //             >
-// //               Contact
-// //             </a>
-// //             <a
-// //               href="#view-analytics"
-// //               className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-// //             >
-// //               Analytics
-// //             </a>
-// //           </div>
-// //         </div>
-
-// //         {/* Logout Button */}
-// //         <button
-// //           onClick={onLogout}
-// //           className="px-3 py-1 rounded border border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition"
-// //         >
-// //           Logout
-// //         </button>
-// //       </nav>
-// //     </header>
-// //   );
-// // }
-
-// // export default Header;
+// export default Header;
 
 
 
 
 
 
+// import React, { useState } from "react";
+// import connectlyLogo from "../I4.png";
 
-// // import React, { useState } from "react";
-// // import connectlyLogo from "../I4.png";
+// function Header({
+//   userName = "User",
+//   notificationsCount = 0,
+//   onThemeToggle = () => {},
+//   onLogout = () => {},
+// }) {
+//   const [darkMode, setDarkMode] = useState(false);
 
-// // function Header({
-// //   userName = "User",
-// //   notificationsCount = 0,
-// //   onThemeToggle = () => {},
-// //   onLogout = () => {},
-// // }) {
-// //   const [darkMode, setDarkMode] = useState(false);
+//   const toggleTheme = () => {
+//     setDarkMode(!darkMode);
+//     onThemeToggle(!darkMode);
+//   };
 
-// //   const toggleTheme = () => {
-// //     setDarkMode(!darkMode);
-// //     onThemeToggle(!darkMode);
-// //   };
+//   return (
+//     <header
+//       className={`flex items-center justify-between px-8 py-4 sticky top-0 z-20 w-full shadow ${
+//         darkMode ? "bg-gray-900" : "bg-[#262947]"
+//       }`}
+//     >
+//       <div className="flex items-center space-x-4">
+//         <img
+//           src={connectlyLogo}
+//           alt="Connectly AI Logo"
+//           className="w-12 h-12 rounded-lg"
+//         />
+//         <span className="text-2xl font-bold text-[#90def9] tracking-wide">
+//           Connectly
+//         </span>
+//         <span className="text-white font-medium">Hello, {userName}</span>
+//       </div>
 
-// //   return (
-// //     <header
-// //       className={`flex items-center justify-between px-8 py-4 sticky top-0 z-20 w-full shadow-lg transition-colors duration-500 ${
-// //         darkMode ? "bg-gray-900" : "bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700"
-// //       }`}
-// //     >
-// //       <div className="flex items-center space-x-4">
-// //         <img
-// //           src={connectlyLogo}
-// //           alt="Connectly AI Logo"
-// //           className="w-12 h-12 rounded-md shadow-md"
-// //         />
-// //         <span
-// //           className={`text-2xl font-extrabold tracking-wide ${
-// //             darkMode ? "text-cyan-400" : "text-cyan-200"
-// //           }`}
-// //         >
-// //           Connectly
-// //         </span>
-// //         <span className={`font-semibold ${darkMode ? "text-white" : "text-cyan-100"}`}>
-// //           Hello, {userName}
-// //         </span>
-// //       </div>
+//       <nav className="flex items-center space-x-6 font-medium text-[#ebf1ff]">
 
-// //       <nav className="flex items-center space-x-6 font-semibold transition-colors duration-300">
-// //         <ul className="flex gap-10">
-// //           <li>
-// //             <a
-// //               href="#about"
-// //               className={`hover:text-cyan-300 transition-colors ${
-// //                 darkMode ? "text-cyan-200" : "text-cyan-100"
-// //               }`}
-// //             >
-// //               About
-// //             </a>
-// //           </li>
-// //           <li>
-// //             <a
-// //               href="#contacts"
-// //               className={`hover:text-cyan-300 transition-colors ${
-// //                 darkMode ? "text-cyan-200" : "text-cyan-100"
-// //               }`}
-// //             >
-// //               Contacts
-// //             </a>
-// //           </li>
-// //           <li>
-// //             <a
-// //               href="#analytics"
-// //               className={`hover:text-cyan-300 transition-colors ${
-// //                 darkMode ? "text-cyan-200" : "text-cyan-100"
-// //               }`}
-// //             >
-// //               Analytics
-// //             </a>
-// //           </li>
-// //         </ul>
 
-// //         {/* Quick Actions Dropdown */}
-// //         <div className="relative group">
-// //           <button
-// //             className={`px-4 py-2 rounded-md text-white ${
-// //               darkMode ? "bg-cyan-600 hover:bg-cyan-700" : "bg-cyan-700 hover:bg-cyan-800"
-// //             } transition-colors duration-300`}
-// //           >
-// //             Quick Actions ▼
-// //           </button>
+//         {/* Quick Actions Dropdown */}
+//         <div className="relative group">
+//           <button className="px-3 py-1 rounded bg-[#4452c3] hover:bg-[#334080] text-white">
+//             Quick Actions ▼
+//           </button>
+//           <div className="absolute right-0 mt-2 w-48 rounded-md bg-white shadow-lg z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-300">
+//             <a
+//               href="#new-email"
+//               className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+//             >
+//               About
+//             </a>
+//             <a
+//               href="#add-contact"
+//               className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+//             >
+//               Contact
+//             </a>
+//             <a
+//               href="#view-analytics"
+//               className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+//             >
+//               Analytics
+//             </a>
+//           </div>
+//         </div>
 
-// //           <div className="absolute right-0 mt-2 w-52 rounded-md bg-white shadow-lg z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-300">
-// //             <a
-// //               href="#about"
-// //               className="block px-5 py-3 text-gray-800 hover:bg-cyan-100 transition-colors"
-// //             >
-// //               About Connectly
-// //             </a>
-// //             <a
-// //               href="#contacts"
-// //               className="block px-5 py-3 text-gray-800 hover:bg-cyan-100 transition-colors"
-// //             >
-// //               Contact Us
-// //             </a>
-// //             <a
-// //               href="#analytics"
-// //               className="block px-5 py-3 text-gray-800 hover:bg-cyan-100 transition-colors"
-// //             >
-// //               Analytics Dashboard
-// //             </a>
-// //           </div>
-// //         </div>
+//         {/* Logout Button */}
+//         <button
+//           onClick={onLogout}
+//           className="px-3 py-1 rounded border border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition"
+//         >
+//           Logout
+//         </button>
+//       </nav>
+//     </header>
+//   );
+// }
 
-// //         {/* Logout Button */}
-// //         <button
-// //           onClick={onLogout}
-// //           className={`px-4 py-2 rounded-md border-2 font-semibold transition-colors duration-300 ${
-// //             darkMode
-// //               ? "border-red-600 text-red-500 hover:bg-red-700 hover:text-white"
-// //               : "border-red-500 text-red-600 hover:bg-red-600 hover:text-white"
-// //           }`}
-// //         >
-// //           Logout
-// //         </button>
-// //       </nav>
-// //     </header>
-// //   );
-// // }
-
-// // export default Header;
+// export default Header;
 
 
 
@@ -241,97 +111,129 @@
 
 
 
+// import React, { useState } from "react";
+// import connectlyLogo from "../I4.png";
 
-// // import React, { useState } from "react";
-// // import connectlyLogo from "../I4.png";
+// function Header({
+//   userName = "User",
+//   notificationsCount = 0,
+//   onThemeToggle = () => {},
+//   onLogout = () => {},
+// }) {
+//   const [darkMode, setDarkMode] = useState(false);
 
-// // function Header({
-// //   userName = "User",
-// //   onThemeToggle = () => {},
-// //   onLogout = () => {},
-// // }) {
-// //   const [darkMode, setDarkMode] = useState(false);
+//   const toggleTheme = () => {
+//     setDarkMode(!darkMode);
+//     onThemeToggle(!darkMode);
+//   };
 
-// //   const toggleTheme = () => {
-// //     setDarkMode(!darkMode);
-// //     onThemeToggle(!darkMode);
-// //   };
+//   return (
+//     <header
+//       className={`flex items-center justify-between px-8 py-4 sticky top-0 z-20 w-full shadow-lg transition-colors duration-500 ${
+//         darkMode ? "bg-gray-900" : "bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700"
+//       }`}
+//     >
+//       <div className="flex items-center space-x-4">
+//         <img
+//           src={connectlyLogo}
+//           alt="Connectly AI Logo"
+//           className="w-12 h-12 rounded-md shadow-md"
+//         />
+//         <span
+//           className={`text-2xl font-extrabold tracking-wide ${
+//             darkMode ? "text-cyan-400" : "text-cyan-200"
+//           }`}
+//         >
+//           Connectly
+//         </span>
+//         <span className={`font-semibold ${darkMode ? "text-white" : "text-cyan-100"}`}>
+//           Hello, {userName}
+//         </span>
+//       </div>
 
-// //   return (
-// //     <header
-// //       className={`flex items-center justify-between px-6 md:px-10 lg:px-16 py-4 sticky top-0 z-20 w-full shadow-lg transition-all duration-300 ${
-// //         darkMode ? "bg-gray-900 text-gray-200" : "bg-gray-800 text-gray-50"
-// //       }`}
-// //     >
-// //       <div className="flex items-center space-x-4">
-// //         <img
-// //           src={connectlyLogo}
-// //           alt="Connectly AI Logo"
-// //           className="w-10 h-10 rounded-full object-cover shadow-md"
-// //         />
-// //         <span className="text-3xl font-extrabold text-cyan-400 tracking-wider">
-// //           Connectly
-// //         </span>
-// //         <span className="text-sm font-light text-gray-300 hidden sm:block ml-4">
-// //           Hello, {userName} 👋
-// //         </span>
-// //       </div>
+//       <nav className="flex items-center space-x-6 font-semibold transition-colors duration-300">
+//         <ul className="flex gap-10">
+//           <li>
+//             <a
+//               href="#about"
+//               className={`hover:text-cyan-300 transition-colors ${
+//                 darkMode ? "text-cyan-200" : "text-cyan-100"
+//               }`}
+//             >
+//               About
+//             </a>
+//           </li>
+//           <li>
+//             <a
+//               href="#contacts"
+//               className={`hover:text-cyan-300 transition-colors ${
+//                 darkMode ? "text-cyan-200" : "text-cyan-100"
+//               }`}
+//             >
+//               Contacts
+//             </a>
+//           </li>
+//           <li>
+//             <a
+//               href="#analytics"
+//               className={`hover:text-cyan-300 transition-colors ${
+//                 darkMode ? "text-cyan-200" : "text-cyan-100"
+//               }`}
+//             >
+//               Analytics
+//             </a>
+//           </li>
+//         </ul>
 
-// //       <nav className="flex items-center space-x-6 font-medium">
-// //         {/* Quick Actions Dropdown */}
-// //         <div className="relative group">
-// //           <button className="flex items-center space-x-2 px-4 py-2 rounded-md bg-sky-600 text-white font-semibold transition-all duration-300 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-gray-800">
-// //             <span>Quick Actions</span>
-// //             <svg
-// //               className="w-4 h-4 transition-transform duration-200 transform group-hover:rotate-180"
-// //               fill="none"
-// //               stroke="currentColor"
-// //               viewBox="0 0 24 24"
-// //               xmlns="http://www.w3.org/2000/svg"
-// //             >
-// //               <path
-// //                 strokeLinecap="round"
-// //                 strokeLinejoin="round"
-// //                 strokeWidth="2"
-// //                 d="M19 9l-7 7-7-7"
-// //               ></path>
-// //             </svg>
-// //           </button>
-// //           <div className="absolute right-0 mt-2 w-48 rounded-lg bg-slate-700 shadow-xl overflow-hidden z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-300 transform scale-95 group-hover:scale-100">
-// //             <a
-// //               href="#about"
-// //               className="block px-4 py-2 text-gray-200 hover:bg-slate-600 transition-colors"
-// //             >
-// //               About
-// //             </a>
-// //             <a
-// //               href="#contact"
-// //               className="block px-4 py-2 text-gray-200 hover:bg-slate-600 transition-colors"
-// //             >
-// //               Contact
-// //             </a>
-// //             <a
-// //               href="#analytics"
-// //               className="block px-4 py-2 text-gray-200 hover:bg-slate-600 transition-colors"
-// //             >
-// //               Analytics
-// //             </a>
-// //           </div>
-// //         </div>
+//         {/* Quick Actions Dropdown */}
+//         <div className="relative group">
+//           <button
+//             className={`px-4 py-2 rounded-md text-white ${
+//               darkMode ? "bg-cyan-600 hover:bg-cyan-700" : "bg-cyan-700 hover:bg-cyan-800"
+//             } transition-colors duration-300`}
+//           >
+//             Quick Actions ▼
+//           </button>
 
-// //         {/* Logout Button */}
-// //         <button
-// //           onClick={onLogout}
-// //           className="px-4 py-2 rounded-md border border-rose-600 text-rose-600 font-semibold transition-all duration-300 hover:bg-rose-700 hover:text-white"
-// //         >
-// //           Logout
-// //         </button>
-// //       </nav>
-// //     </header>
-// //   );
-// // }
+//           <div className="absolute right-0 mt-2 w-52 rounded-md bg-white shadow-lg z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-300">
+//             <a
+//               href="#about"
+//               className="block px-5 py-3 text-gray-800 hover:bg-cyan-100 transition-colors"
+//             >
+//               About Connectly
+//             </a>
+//             <a
+//               href="#contacts"
+//               className="block px-5 py-3 text-gray-800 hover:bg-cyan-100 transition-colors"
+//             >
+//               Contact Us
+//             </a>
+//             <a
+//               href="#analytics"
+//               className="block px-5 py-3 text-gray-800 hover:bg-cyan-100 transition-colors"
+//             >
+//               Analytics Dashboard
+//             </a>
+//           </div>
+//         </div>
 
-// // export default Header;
+//         {/* Logout Button */}
+//         <button
+//           onClick={onLogout}
+//           className={`px-4 py-2 rounded-md border-2 font-semibold transition-colors duration-300 ${
+//             darkMode
+//               ? "border-red-600 text-red-500 hover:bg-red-700 hover:text-white"
+//               : "border-red-500 text-red-600 hover:bg-red-600 hover:text-white"
+//           }`}
+//         >
+//           Logout
+//         </button>
+//       </nav>
+//     </header>
+//   );
+// }
+
+// export default Header;
 
 
 
@@ -339,140 +241,238 @@
 
 
 
-// // import React, { useState } from "react";
-// // import connectlyLogo from "../I4.png";
 
-// // function Header({ userName = "User", onLogout = () => {} }) {
-// //   const [activeSection, setActiveSection] = useState(null);
+// import React, { useState } from "react";
+// import connectlyLogo from "../I4.png";
 
-// //   return (
-// //     <div className="w-full flex justify-center mt-6">
-// //       <div className="w-full max-w-[940px] bg-white bg-opacity-95 rounded-3xl shadow-2xl p-6 md:p-8 lg:p-10">
-// //         {/* Header Content */}
-// //         <header className="flex items-center justify-between mb-6">
-// //           <div className="flex items-center space-x-4">
-// //             <img
-// //               src={connectlyLogo}
-// //               alt="Connectly AI Logo"
-// //               className="w-12 h-12 rounded-lg shadow-md object-cover"
-// //             />
-// //             <span className="text-2xl font-extrabold text-cyan-400 tracking-wider">
-// //               Connectly
-// //             </span>
-// //             <span className="text-sm font-light text-gray-700 hidden sm:block ml-2">
-// //               Hello, {userName} 👋
-// //             </span>
-// //           </div>
+// function Header({
+//   userName = "User",
+//   onThemeToggle = () => {},
+//   onLogout = () => {},
+// }) {
+//   const [darkMode, setDarkMode] = useState(false);
 
-// //           <nav className="flex items-center space-x-4 font-medium">
-// //             {/* Quick Actions */}
-// //             <div className="relative group">
-// //               <button className="flex items-center space-x-1 px-4 py-2 rounded-md bg-sky-600 text-white font-semibold hover:bg-sky-700 transition-all">
-// //                 <span>Quick Actions</span>
-// //                 <svg
-// //                   className="w-4 h-4 transition-transform duration-200 transform group-hover:rotate-180"
-// //                   fill="none"
-// //                   stroke="currentColor"
-// //                   viewBox="0 0 24 24"
-// //                   xmlns="http://www.w3.org/2000/svg"
-// //                 >
-// //                   <path
-// //                     strokeLinecap="round"
-// //                     strokeLinejoin="round"
-// //                     strokeWidth="2"
-// //                     d="M19 9l-7 7-7-7"
-// //                   ></path>
-// //                 </svg>
-// //               </button>
-// //               <div className="absolute right-0 mt-2 w-40 rounded-lg bg-gray-100 shadow-md overflow-hidden z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100">
-// //                 <button
-// //                   onClick={() => setActiveSection("about")}
-// //                   className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors"
-// //                 >
-// //                   About
-// //                 </button>
-// //                 <button
-// //                   onClick={() => setActiveSection("contact")}
-// //                   className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors"
-// //                 >
-// //                   Contact
-// //                 </button>
-// //                 <button
-// //                   onClick={() => setActiveSection("analytics")}
-// //                   className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors"
-// //                 >
-// //                   Analytics
-// //                 </button>
-// //               </div>
-// //             </div>
+//   const toggleTheme = () => {
+//     setDarkMode(!darkMode);
+//     onThemeToggle(!darkMode);
+//   };
 
-// //             {/* Logout */}
-// //             <button
-// //               onClick={onLogout}
-// //               className="px-4 py-2 rounded-md border border-rose-600 text-rose-600 font-semibold hover:bg-rose-700 hover:text-white transition-all"
-// //             >
-// //               Logout
-// //             </button>
-// //           </nav>
-// //         </header>
+//   return (
+//     <header
+//       className={`flex items-center justify-between px-6 md:px-10 lg:px-16 py-4 sticky top-0 z-20 w-full shadow-lg transition-all duration-300 ${
+//         darkMode ? "bg-gray-900 text-gray-200" : "bg-gray-800 text-gray-50"
+//       }`}
+//     >
+//       <div className="flex items-center space-x-4">
+//         <img
+//           src={connectlyLogo}
+//           alt="Connectly AI Logo"
+//           className="w-10 h-10 rounded-full object-cover shadow-md"
+//         />
+//         <span className="text-3xl font-extrabold text-cyan-400 tracking-wider">
+//           Connectly
+//         </span>
+//         <span className="text-sm font-light text-gray-300 hidden sm:block ml-4">
+//           Hello, {userName} 👋
+//         </span>
+//       </div>
 
-// //         {/* Conditional Section Rendering */}
-// //         {activeSection === "about" && (
-// //           <section className="py-4 text-gray-800">
-// //             <h2 className="text-xl font-bold text-cyan-500 mb-2">
-// //               About Connectly AI
-// //             </h2>
-// //             <p className="text-sm">
-// //               Connectly AI simplifies workflows, automates tasks, and delivers
-// //               smart insights in real-time for professionals and businesses.
-// //             </p>
-// //           </section>
-// //         )}
+//       <nav className="flex items-center space-x-6 font-medium">
+//         {/* Quick Actions Dropdown */}
+//         <div className="relative group">
+//           <button className="flex items-center space-x-2 px-4 py-2 rounded-md bg-sky-600 text-white font-semibold transition-all duration-300 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-gray-800">
+//             <span>Quick Actions</span>
+//             <svg
+//               className="w-4 h-4 transition-transform duration-200 transform group-hover:rotate-180"
+//               fill="none"
+//               stroke="currentColor"
+//               viewBox="0 0 24 24"
+//               xmlns="http://www.w3.org/2000/svg"
+//             >
+//               <path
+//                 strokeLinecap="round"
+//                 strokeLinejoin="round"
+//                 strokeWidth="2"
+//                 d="M19 9l-7 7-7-7"
+//               ></path>
+//             </svg>
+//           </button>
+//           <div className="absolute right-0 mt-2 w-48 rounded-lg bg-slate-700 shadow-xl overflow-hidden z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-300 transform scale-95 group-hover:scale-100">
+//             <a
+//               href="#about"
+//               className="block px-4 py-2 text-gray-200 hover:bg-slate-600 transition-colors"
+//             >
+//               About
+//             </a>
+//             <a
+//               href="#contact"
+//               className="block px-4 py-2 text-gray-200 hover:bg-slate-600 transition-colors"
+//             >
+//               Contact
+//             </a>
+//             <a
+//               href="#analytics"
+//               className="block px-4 py-2 text-gray-200 hover:bg-slate-600 transition-colors"
+//             >
+//               Analytics
+//             </a>
+//           </div>
+//         </div>
 
-// //         {activeSection === "contact" && (
-// //           <section className="py-4 text-gray-800">
-// //             <h2 className="text-xl font-bold text-sky-600 mb-2">Contact Me</h2>
-// //             <form className="space-y-3">
-// //               <input
-// //                 type="text"
-// //                 placeholder="Your Name"
-// //                 className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500"
-// //               />
-// //               <input
-// //                 type="email"
-// //                 placeholder="Your Email"
-// //                 className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500"
-// //               />
-// //               <textarea
-// //                 rows="4"
-// //                 placeholder="Your Message"
-// //                 className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500"
-// //               ></textarea>
-// //               <button className="px-4 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition">
-// //                 Send
-// //               </button>
-// //             </form>
-// //           </section>
-// //         )}
+//         {/* Logout Button */}
+//         <button
+//           onClick={onLogout}
+//           className="px-4 py-2 rounded-md border border-rose-600 text-rose-600 font-semibold transition-all duration-300 hover:bg-rose-700 hover:text-white"
+//         >
+//           Logout
+//         </button>
+//       </nav>
+//     </header>
+//   );
+// }
 
-// //         {activeSection === "analytics" && (
-// //           <section className="py-4 text-gray-800">
-// //             <h2 className="text-xl font-bold text-emerald-500 mb-2">
-// //               Analytics Overview
-// //             </h2>
-// //             <div className="grid grid-cols-3 gap-4 text-center">
-// //               <div className="p-3 bg-gray-100 rounded-lg shadow">1.2M+ Tasks Automated</div>
-// //               <div className="p-3 bg-gray-100 rounded-lg shadow">98% Accuracy</div>
-// //               <div className="p-3 bg-gray-100 rounded-lg shadow">75+ Clients</div>
-// //             </div>
-// //           </section>
-// //         )}
-// //       </div>
-// //     </div>
-// //   );
-// // }
+// export default Header;
 
-// // export default Header;
+
+
+
+
+
+
+// import React, { useState } from "react";
+// import connectlyLogo from "../I4.png";
+
+// function Header({ userName = "User", onLogout = () => {} }) {
+//   const [activeSection, setActiveSection] = useState(null);
+
+//   return (
+//     <div className="w-full flex justify-center mt-6">
+//       <div className="w-full max-w-[940px] bg-white bg-opacity-95 rounded-3xl shadow-2xl p-6 md:p-8 lg:p-10">
+//         {/* Header Content */}
+//         <header className="flex items-center justify-between mb-6">
+//           <div className="flex items-center space-x-4">
+//             <img
+//               src={connectlyLogo}
+//               alt="Connectly AI Logo"
+//               className="w-12 h-12 rounded-lg shadow-md object-cover"
+//             />
+//             <span className="text-2xl font-extrabold text-cyan-400 tracking-wider">
+//               Connectly
+//             </span>
+//             <span className="text-sm font-light text-gray-700 hidden sm:block ml-2">
+//               Hello, {userName} 👋
+//             </span>
+//           </div>
+
+//           <nav className="flex items-center space-x-4 font-medium">
+//             {/* Quick Actions */}
+//             <div className="relative group">
+//               <button className="flex items-center space-x-1 px-4 py-2 rounded-md bg-sky-600 text-white font-semibold hover:bg-sky-700 transition-all">
+//                 <span>Quick Actions</span>
+//                 <svg
+//                   className="w-4 h-4 transition-transform duration-200 transform group-hover:rotate-180"
+//                   fill="none"
+//                   stroke="currentColor"
+//                   viewBox="0 0 24 24"
+//                   xmlns="http://www.w3.org/2000/svg"
+//                 >
+//                   <path
+//                     strokeLinecap="round"
+//                     strokeLinejoin="round"
+//                     strokeWidth="2"
+//                     d="M19 9l-7 7-7-7"
+//                   ></path>
+//                 </svg>
+//               </button>
+//               <div className="absolute right-0 mt-2 w-40 rounded-lg bg-gray-100 shadow-md overflow-hidden z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100">
+//                 <button
+//                   onClick={() => setActiveSection("about")}
+//                   className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors"
+//                 >
+//                   About
+//                 </button>
+//                 <button
+//                   onClick={() => setActiveSection("contact")}
+//                   className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors"
+//                 >
+//                   Contact
+//                 </button>
+//                 <button
+//                   onClick={() => setActiveSection("analytics")}
+//                   className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors"
+//                 >
+//                   Analytics
+//                 </button>
+//               </div>
+//             </div>
+
+//             {/* Logout */}
+//             <button
+//               onClick={onLogout}
+//               className="px-4 py-2 rounded-md border border-rose-600 text-rose-600 font-semibold hover:bg-rose-700 hover:text-white transition-all"
+//             >
+//               Logout
+//             </button>
+//           </nav>
+//         </header>
+
+//         {/* Conditional Section Rendering */}
+//         {activeSection === "about" && (
+//           <section className="py-4 text-gray-800">
+//             <h2 className="text-xl font-bold text-cyan-500 mb-2">
+//               About Connectly AI
+//             </h2>
+//             <p className="text-sm">
+//               Connectly AI simplifies workflows, automates tasks, and delivers
+//               smart insights in real-time for professionals and businesses.
+//             </p>
+//           </section>
+//         )}
+
+//         {activeSection === "contact" && (
+//           <section className="py-4 text-gray-800">
+//             <h2 className="text-xl font-bold text-sky-600 mb-2">Contact Me</h2>
+//             <form className="space-y-3">
+//               <input
+//                 type="text"
+//                 placeholder="Your Name"
+//                 className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500"
+//               />
+//               <input
+//                 type="email"
+//                 placeholder="Your Email"
+//                 className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500"
+//               />
+//               <textarea
+//                 rows="4"
+//                 placeholder="Your Message"
+//                 className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500"
+//               ></textarea>
+//               <button className="px-4 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-700 transition">
+//                 Send
+//               </button>
+//             </form>
+//           </section>
+//         )}
+
+//         {activeSection === "analytics" && (
+//           <section className="py-4 text-gray-800">
+//             <h2 className="text-xl font-bold text-emerald-500 mb-2">
+//               Analytics Overview
+//             </h2>
+//             <div className="grid grid-cols-3 gap-4 text-center">
+//               <div className="p-3 bg-gray-100 rounded-lg shadow">1.2M+ Tasks Automated</div>
+//               <div className="p-3 bg-gray-100 rounded-lg shadow">98% Accuracy</div>
+//               <div className="p-3 bg-gray-100 rounded-lg shadow">75+ Clients</div>
+//             </div>
+//           </section>
+//         )}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Header;
 
 
 
@@ -767,3 +767,181 @@
 // }
 
 // export default App;
+
+
+
+
+
+
+
+
+import React, { useState } from "react";
+import connectlyLogo from "../I4.png";
+
+function Header({ userName = "User", onLogout = () => {} }) {
+  const [activeSection, setActiveSection] = useState(null);
+
+  const handleQuickActionClick = (section) => {
+    setActiveSection(activeSection === section ? null : section);
+  };
+
+  const handleDashboardClick = () => {
+    setActiveSection(null);
+  };
+
+  return (
+    <div className="w-full flex justify-center mt-6 z-50">
+      <div className="w-full max-w-[940px] bg-gradient-to-tr from-[#2c2c98] to-[#79aed1] bg-opacity-95 rounded-3xl shadow-2xl p-6 md:p-8 lg:p-10 border border-[#b8c9d1] relative">
+        {/* Header Content */}
+        <header className="flex items-center justify-between mb-6">
+          <div className="flex items-center space-x-4">
+            {/* Logo Container with Gradient */}
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-tr from-[#eeeef3] to-[#b6bdbd] shadow-md">
+              <img
+                src={connectlyLogo}
+                alt="Connectly AI Logo"
+                className="w-10 h-10 object-contain rounded-lg"
+              />
+            </div>
+            <span className="text-2xl font-extrabold text-[#4452c3] tracking-wider">
+              Connectly
+            </span>
+            <span className="text-sm font-light text-gray-700 hidden sm:block ml-2">
+              Hello, {userName} 👋
+            </span>
+          </div>
+          <nav className="flex items-center space-x-4 font-medium">
+            {/* Dashboard Link */}
+            <button
+              onClick={handleDashboardClick}
+              className="px-4 py-2 rounded-md bg-gradient-to-r from-[#ebf1ff] to-[#f8edfa] text-[#4452c3] font-semibold hover:from-[#bddafa] hover:to-[#ebf1ff] transition-all transform hover:scale-105 shadow-md"
+            >
+              Dashboard
+            </button>
+            {/* Quick Actions */}
+            <div className="relative group">
+              <button className="flex items-center space-x-1 px-4 py-2 rounded-md bg-gradient-to-r from-[#4452c3] to-[#308fa7] text-white font-semibold hover:from-[#3d4285] hover:to-[#28798e] transition-all transform hover:scale-105 shadow-md">
+                <span>Quick Actions</span>
+                <svg
+                  className={`w-4 h-4 transition-transform duration-200 transform ${activeSection ? 'rotate-180' : ''}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div className="absolute right-0 mt-2 w-40 rounded-lg bg-gray-100 shadow-xl overflow-hidden z-50 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-300 transform scale-95 group-hover:scale-100">
+                <button
+                  onClick={() => handleQuickActionClick("about")}
+                  className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors"
+                >
+                  About
+                </button>
+                <button
+                  onClick={() => handleQuickActionClick("contact")}
+                  className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors"
+                >
+                  Contact
+                </button>
+                <button
+                  onClick={() => handleQuickActionClick("analytics")}
+                  className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors"
+                >
+                  Analytics
+                </button>
+              </div>
+            </div>
+            {/* Logout */}
+            <button
+              onClick={onLogout}
+              className="px-4 py-2 rounded-md border-2 border-rose-600 text-rose-600 font-semibold hover:bg-rose-700 hover:text-white transition-all transform hover:scale-105 shadow-md"
+            >
+              Logout
+            </button>
+          </nav>
+        </header>
+
+        {/* Conditional Section Rendering */}
+        {activeSection === "about" && (
+          <section className="py-4 text-[#28306e] border-t border-gray-200 mt-4">
+            <h2 className="text-xl font-bold text-[#4452c3] mb-2">
+              About Connectly AI
+            </h2>
+            <p className="text-sm leading-relaxed">
+              Connectly is your all-in-one outreach solution, designed to **streamline your professional networking and lead generation**. We simplify workflows, automate repetitive tasks like email sending, and provide **smart insights** to help you connect with the right people. Our platform is built for professionals and businesses who want to grow their network and scale their outreach efforts efficiently.
+            </p>
+            <h3 className="text-lg font-semibold text-[#308fa7] mt-4 mb-1">
+              Our Vision
+            </h3>
+            <p className="text-sm leading-relaxed">
+              We envision a world where professional connections are built seamlessly and securely. By leveraging cutting-edge AI and secure integrations, we empower our users to focus on what truly matters: **building relationships** and achieving their goals.
+            </p>
+          </section>
+        )}
+        {activeSection === "contact" && (
+          <section className="py-4 text-[#28306e] border-t border-gray-200 mt-4">
+            <h2 className="text-xl font-bold text-[#4452c3] mb-2">
+              Get in Touch
+            </h2>
+            <p className="text-sm mb-4">
+              Have a question, feedback, or need support? Fill out the form below and we'll get back to you as soon as possible.
+            </p>
+            <form className="space-y-3">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#308fa7] focus:border-transparent transition-all"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#308fa7] focus:border-transparent transition-all"
+              />
+              <textarea
+                rows="4"
+                placeholder="Your Message"
+                className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#308fa7] focus:border-transparent transition-all"
+              ></textarea>
+              <button className="px-6 py-2 bg-[#4851a8] text-white font-semibold rounded-md hover:bg-[#3d4285] transition-colors">
+                Send Message
+              </button>
+            </form>
+          </section>
+        )}
+        {activeSection === "analytics" && (
+          <section className="py-4 text-[#28306e] border-t border-gray-200 mt-4">
+            <h2 className="text-xl font-bold text-[#4452c3] mb-4">
+              Analytics Overview
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+              <div className="p-4 bg-gradient-to-r from-[#ebf1ff] to-[#f8edfa] rounded-lg shadow-md border border-[#c2e7f8]">
+                <div className="text-3xl font-extrabold text-[#4452c3]">1.2M+</div>
+                <div className="text-xs text-gray-600 font-semibold mt-1">Emails Sent</div>
+              </div>
+              <div className="p-4 bg-gradient-to-r from-[#ebf1ff] to-[#f8edfa] rounded-lg shadow-md border border-[#c2e7f8]">
+                <div className="text-3xl font-extrabold text-[#3797ad]">98%</div>
+                <div className="text-xs text-gray-600 font-semibold mt-1">Delivery Success Rate</div>
+              </div>
+              <div className="p-4 bg-gradient-to-r from-[#ebf1ff] to-[#f8edfa] rounded-lg shadow-md border border-[#c2e7f8]">
+                <div className="text-3xl font-extrabold text-[#4452c3]">75+</div>
+                <div className="text-xs text-gray-600 font-semibold mt-1">Satisfied Clients</div>
+              </div>
+            </div>
+            <div className="mt-6 text-sm text-gray-600 text-center">
+              Our metrics are a testament to our commitment to a **secure and effective** outreach platform.
+            </div>
+          </section>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default Header;
