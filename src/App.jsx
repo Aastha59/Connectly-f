@@ -2,7 +2,7 @@ import React, { useState, useMemo, createContext } from "react";
 import Privacy from "./Pages/Privacy";
 import Home from "./Pages/Home";
 import Terms from "./Pages/Terms";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import {
   BrowserRouter as Router,
   Routes,

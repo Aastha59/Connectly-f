@@ -6,7 +6,7 @@ import ContactsTable from "../components/ContactsTable";
 import EmailSection from "../components/EmailSection";
 import AdBanner from "../components/AdBanner";
 import connectlyLogo from "../I4.png";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 function Home() {
   const [contacts, setContacts] = useState([]);
   const [templates, setTemplates] = useState([]);
@@ -139,7 +139,7 @@ function Home() {
   return (
     
     <div className="min-h-screen flex flex-col items-center bg-gradient-to-br from-[#262947] via-[#4851a8] to-[#c2e7f8]">
-      <Header />
+      {/* <Header /> */}
 
       <div className="w-full max-w-[940px] bg-white bg-opacity-95 rounded-3xl shadow-2xl p-10 mt-12 mb-12 relative">
         {/* Branding & Dashboard Header */}
