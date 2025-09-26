@@ -22,6 +22,8 @@ function Home() {
   // OAuth states
   const [googleToken, setGoogleToken] = useState(null);
   const [userProfile, setUserProfile] = useState(null);
+  const [loading, setLoading] = useState(false);
+
   const login = useGoogleLogin({
     onSuccess: async (tokenResponse) => {
       try {
@@ -58,6 +60,9 @@ function Home() {
     setStatus("");
   };
   const handleSearch = async (role, country, profile, contactType) => {
+    setLoading(true);
+    setStatus("Searching contacts...");
+    setContacts([]);
     setRole(role);
     setCountry(country);
     setProfile(profile);
@@ -252,7 +257,7 @@ function Home() {
           />
         </div>
         {/* Search Form */}
-        <SearchForm onSearch={handleSearch} />
+        <SearchForm onSearch={handleSearch} loading={loading} />
         {/* Contacts Table */}
         {contacts.length > 0 && (
           <ContactsTable contacts={contacts} type={contactType} />
