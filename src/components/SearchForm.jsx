@@ -42,7 +42,7 @@
 
 
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 // const SearchForm = ({ onSearch }) => {
 //   const [role, setRole] = useState("");
@@ -103,7 +103,8 @@ import React, { useState } from "react";
 
 
 
-const SearchForm = ({ onSearch, loading }) => {
+import React, { useState } from "react";
+const SearchForm = ({ onSearch, loading, error }) => {
   const [role, setRole] = useState("");
   const [country, setCountry] = useState("");
   const [profile, setProfile] = useState("linkedin");
@@ -150,7 +151,8 @@ const SearchForm = ({ onSearch, loading }) => {
         onClick={() => onSearch(role, country, profile, contactType)}
         disabled={loading} // disable while searching
       >
-        {loading ? "Searching..." : "Find Contacts"}
+        {/* {loading ? "Searching..." : "Find Contacts"} */}
+        {loading ? (error === "network" ? "Wait for some time" : "Searching...") : "Find Contacts"}
       </button>
     </form>
   );

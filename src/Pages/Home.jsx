@@ -23,6 +23,8 @@ function Home() {
   const [googleToken, setGoogleToken] = useState(null);
   const [userProfile, setUserProfile] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(""); // <-- new
+
 
   const login = useGoogleLogin({
     onSuccess: async (tokenResponse) => {
@@ -100,7 +102,13 @@ function Home() {
       } else {
         setStatus("Failed to search contacts.");
       }
+    
+      // Set error to trigger "Wait for some time" on button
+      setError("network");
+    } finally {
+      setLoading(false);
     }
+
 
  
     // catch (err) {
@@ -257,7 +265,7 @@ function Home() {
           />
         </div>
         {/* Search Form */}
-        <SearchForm onSearch={handleSearch} loading={loading} />
+        <SearchForm onSearch={handleSearch} loading={loading} error={error}/>
         {/* Contacts Table */}
         {contacts.length > 0 && (
           <ContactsTable contacts={contacts} type={contactType} />
